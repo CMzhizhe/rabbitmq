@@ -36,7 +36,7 @@ public class RabbitMQClient {
         factory.setPassword(password);
         factory.setHost(hostIp);
         factory.setPort(port);
-        factory.setVirtualHost("/");
+        factory.setVirtualHost("/");//类似数据库的意思
         factory.setConnectionTimeout(15 * 1000);         //连接时间设置为10秒
         factory.setAutomaticRecoveryEnabled(true);   //恢复连接，通道
         factory.setTopologyRecoveryEnabled(true);    //恢复通道中 转换器，队列，绑定关系等
