@@ -1,0 +1,3 @@
+include ':RabbitMQlibrary'
+include ':app'
+rootProject.name = "RabbitMQApplication"
